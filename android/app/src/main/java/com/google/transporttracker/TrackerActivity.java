@@ -289,7 +289,7 @@ public class TrackerActivity extends AppCompatActivity {
         }
         Snackbar snackbar = Snackbar
                 .make(
-                        findViewById(R.id.rootView),
+                        findViewById(android.R.id.content),
                         getString(R.string.location_permission_required),
                         Snackbar.LENGTH_INDEFINITE)
                 .setAction(R.string.enable, new View.OnClickListener() {
@@ -325,7 +325,7 @@ public class TrackerActivity extends AppCompatActivity {
             mSwitch.setChecked(false);
         }
         Snackbar snackbar = Snackbar
-                .make(findViewById(R.id.rootView), getString(R.string
+                .make(findViewById(android.R.id.content), getString(R.string
                         .gps_required), Snackbar.LENGTH_INDEFINITE)
                 .setAction(R.string.enable, new View.OnClickListener() {
                     @Override
